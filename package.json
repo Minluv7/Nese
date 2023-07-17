@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "npx @11ty/eleventy",
-  "watch": "npx @11ty/eleventy --serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "npx @11ty/eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "npx postcss input/assets/styles/*.css --dir input/assets/styles/dist --watch"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,10 @@
   },
   "homepage": "https://github.com/Minluv7/Nese.github.io#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.26",
+    "postcss-cli": "^10.1.0",
+    "postcss-nesting": "^12.0.0"
   }
 }
