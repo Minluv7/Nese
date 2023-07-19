@@ -1,18 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{title}}</title>
-    <link rel="stylesheet" href="/styles/reset.css">
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/fonts/stylesheet.css">
+    <title>Document</title>
 </head>
 <body>
 {% include "../_includes/_language.njk" %}
     <main>
     {%block main%}
-        {{content | safe }}
+    {{content | safe}}
     {%endblock main%}
     </main>
 </body>

@@ -1,0 +1,13 @@
+   <ul>
+   {% for lang in collections.language %}
+            <li class="menu__item">
+                <a class="menu__link menu__border" href="{{lang.page.url}}">
+                    {% if lang.data.language %}
+                        {{lang.data.language}}
+                    {% else %}
+                        {{lang.data.title}}
+                    {% endif %}
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
