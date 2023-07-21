@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{title}}</title>
+    <title>{{head}}</title>
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/fonts/stylesheet.css">
 </head>
 <body>
-{% include "../_includes/_language.njk" %}
+
+{% include "../_includes/_nav.njk" %}
     <main>
     {%block main%}
         {{content | safe }}
     {%endblock main%}
     </main>
+    <footer>
+    {% include "../_includes/_language.njk" %}
+    </footer>
 </body>
 </html>
