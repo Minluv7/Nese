@@ -11,5 +11,12 @@ nav:
 ---
 {% extends "../_layouts/base.njk" %}
 {% block main %}
-    <h1>{{title}}</h1>
+<div>
+ <h1>{{title}}</h1>
+    {% include "../_includes/_social.njk" %}
+ <a href="/downloads/cvENG.pdf" download="CV_Nese.pdf">Download CV</a>
+</div>
+<div>
+<img src="/images/portfolioPicture.png" alt="portfolio picture">
+</div>
 {% endblock main %}

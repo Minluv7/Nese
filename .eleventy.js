@@ -2,6 +2,7 @@ module.exports = (eleventyConfig) =>{
     eleventyConfig.addPassthroughCopy({
         "./input/assets/styles/dist/": "styles/",
         "./input/assets/images": "images/",
+        "./input/assets/downloads": "downloads/",
         "./input/assets/fonts": "fonts/",
     });
 

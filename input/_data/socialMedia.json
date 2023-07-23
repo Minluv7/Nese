@@ -1,0 +1,22 @@
+[
+    {
+        "name": "LinkedIn",
+        "img": "/images/linkedin.png",
+        "url": "www.linkedin.com/in/nese-yildirim-3016b51b7"
+    },
+    {
+        "name": "GitHub",
+        "img": "/images/Github.png",
+        "url": "https://github.com/Minluv7"
+    },
+    {
+        "name": "E-mail",
+        "img": "/images/mail.png",
+        "url": "nese.yild@hotmail.com"
+    },
+    {
+        "name": "WhatApp",
+        "img": "/images/WhatsApp.png",
+        "url": "https://wa.me/0486725919"
+    }
+]
