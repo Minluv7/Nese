@@ -1,0 +1,10 @@
+<ul>
+    {% for skill in skills%}
+    <li>
+        <img src="{{skill.img}}" alt="{{skill.name}}"> 
+        <div>
+            <p>{{skill.percentage}}</p>
+        </div>
+    </li>
+    {% endfor %}
+</ul>

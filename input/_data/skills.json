@@ -1,0 +1,57 @@
+[
+    {
+        "name": "JavaScript",
+        "img": "/images/js.png",
+        "percentage": "50%"
+    },
+    {
+        "name": "HTML",
+        "img": "/images/html.png",
+        "percentage": "70%"
+    },
+    {
+        "name": "CSS",
+        "img": "/images/css.png",
+        "percentage": "60%"
+    },
+    {
+        "name": "React",
+        "img": "/images/react.png",
+        "percentage": "45%"
+    },
+    {
+        "name": "SASS",
+        "img": "/images/sass.svg",
+        "percentage": "30%"
+    },
+    {
+        "name": "Bootstrap",
+        "img": "/images/bootstrap.svg",
+        "percentage": "45%"
+    },
+    {
+        "name": "SQLite",
+        "img": "/images/SQLite.svg",
+        "percentage": "40%"
+    },
+    {
+        "name": "Postman",
+        "img": "/images/postman.svg",
+        "percentage": "50%"
+    },
+    {
+        "name": "NodeJs",
+        "img": "/images/nodeJs.png",
+        "percentage": "45%"
+    },
+    {
+        "name": "11ty",
+        "img": "/images/11ty.svg",
+        "percentage": "60%"
+    },
+    {
+        "name": "Adobe Photoshop",
+        "img": "/images/photoshop.png",
+        "percentage": "50%"
+    }
+]

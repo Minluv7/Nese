@@ -13,10 +13,21 @@ nav:
 {% block main %}
 <div>
  <h1>{{title}}</h1>
+ <p>Artevelde yüksek okulu'nda full stack developer öğrencisiyim. HTML, CSS ve JavaScript konularında uzmanlaşıyorum.</p>
     {% include "../_includes/_social.njk" %}
     <a href="/downloads/cvENG.pdf" download="CV_Nese.pdf">Download CV</a>
 </div>
 <div>
 <img src="/images/portfolioPicture.png" alt="portfolio picture">
+</div>
+<div class="dark__background">
+<h1>Skills</h1>
+    {% include "../_includes/_skills.njk" %}
+</div>
+<div>
+<h1>Projeler</h1>
+</div>
+<div class="dark__background">
+<h1>Iletişime geç</h1>
 </div>
 {% endblock main %}
