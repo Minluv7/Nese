@@ -26,8 +26,24 @@ nav:
 </div>
 <div>
 <h1>Projeler</h1>
+ {% include "../_includes/_projects.njk" %}
 </div>
 <div class="dark__background">
 <h1>Iletişime geç</h1>
+<form
+  action="https://formspree.io/f/myyqkzdz"
+  method="POST"
+>
+  <label>
+    E-posta adresiniz:
+    <input type="email" name="email" required>
+  </label>
+  <label>
+    Mesajınız:
+    <textarea name="message" required></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Gönder</button>
+</form>
 </div>
 {% endblock main %}
