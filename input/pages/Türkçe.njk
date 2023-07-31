@@ -4,7 +4,7 @@ tags: language
 head: Nese Yildirim
 language: Türkçe
 nav:
--   ana sayfa
+-   ana-sayfa
 -   skills
 -   projeler
 -   iletişim
@@ -12,7 +12,7 @@ nav:
 {% extends "../_layouts/baseTR.njk" %}
 {% block main %}
 <div>
- <h1>{{title}}</h1>
+ <h1 id="na-sayfa">{{title}}</h1>
  <p>Artevelde yüksek okulu'nda full stack developer öğrencisiyim. HTML, CSS ve JavaScript konularında uzmanlaşıyorum.</p>
     {% include "../_includes/_social.njk" %}
     <a href="/downloads/cvENG.pdf" download="CV_Nese.pdf">Download CV</a>
@@ -21,15 +21,15 @@ nav:
 <img src="/images/portfolioPicture.png" alt="portfolio picture">
 </div>
 <div class="dark__background">
-<h1>Skills</h1>
+<h1 id="skills">Skills</h1>
     {% include "../_includes/_skills.njk" %}
 </div>
 <div>
-<h1>Projeler</h1>
+<h1 id="projeler">Projeler</h1>
  {% include "../_includes/_projects.njk" %}
 </div>
 <div class="dark__background">
-<h1>Iletişime geç</h1>
+<h1 id="iletişim">Iletişime geç</h1>
 <form
   action="https://formspree.io/f/myyqkzdz"
   method="POST"

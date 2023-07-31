@@ -12,7 +12,7 @@ nav:
 {% extends "../_layouts/baseNL.njk" %}
 {% block main %}
 <div>
-    <h1>{{title}}</h1>
+    <h1 id="home">{{title}}</h1>
     <p>ik ben student full stack developer aan arteveldehogeschool
     gespecialiseerd in HTML, CSS en JavaScript.</p>
     <p>Neem gerust een kijkje bij mijn portfolio</p>
@@ -23,15 +23,15 @@ nav:
     <img src="/images/portfolioPicture.png" alt="portfolio picture">
 </div>
 <div class="dark__background">
-    <h1>Skills</h1>
+    <h1 id="skills">Skills</h1>
     {% include "../_includes/_skills.njk" %}
 </div>
 <div>
-    <h1>Projecten</h1>
+    <h1 id="projecten">Projecten</h1>
      {% include "../_includes/_projects.njk" %}
 </div>
 <div class="dark__background">
-    <h1>Contacteer mij</h1>
+    <h1 id="contact">Contacteer mij</h1>
     <form
   action="https://formspree.io/f/myyqkzdz"
   method="POST"

@@ -1,3 +1,5 @@
+
+
 body {
     display: flex;
     flex-direction: column;
@@ -7,3 +9,42 @@ body {
 .dark__background{
     background-color: #588a96;
 }
+
+nav {
+    background-color: #588a96;
+    .space__nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 80rem;
+        ul{
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+            list-style-type: none;
+            li {
+                
+                a{
+                    text-transform: capitalize;
+                    color: #fff;
+                    text-decoration: none;
+                }
+                a:hover, a:focus{
+                    padding: .25rem;
+                    background-color: #61b1c3;
+                    color: #d7f3f8;
+                }
+              
+            }
+        }
+        img{
+            width: 84px;
+            height: 84px;
+        }
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+  }

@@ -1,12 +1,14 @@
 <nav>
-    <div>
-        <img src="/images/logoNY.png" alt="logo">
+    <div class="space__nav">
+        <div>
+            <img src="/images/logoNY.png" alt="logo">
+        </div>
+        <ul>
+        {% for navi in nav %}
+            <li  class="navigation">
+                <a  href="#{{navi}}">{{navi}}</a>
+            </li>
+            {% endfor %}
+        </ul>
     </div>
-    <ul>
-    {% for navi in nav %}
-        <li id={{navi}} class="navigation">
-            <p>{{navi}}</p>
-        </li>
-          {% endfor %}
-    </ul>
 </nav>
