@@ -11,15 +11,18 @@ nav:
 ---
 {% extends "../_layouts/baseTR.njk" %}
 {% block main %}
-<div>
- <h1 id="na-sayfa">{{title}}</h1>
- <p>Artevelde yüksek okulu'nda full stack developer öğrencisiyim. HTML, CSS ve JavaScript konularında uzmanlaşıyorum.</p>
+<div class="head-container">
+  <div>
+    <h1 id="na-sayfa">{{title}}</h1>
+    <p>Artevelde yüksek okulu'nda full stack developer öğrencisiyim. HTML, CSS ve JavaScript konularında uzmanlaşıyorum.</p>
     {% include "../_includes/_social.njk" %}
     <a href="/downloads/cvENG.pdf" download="CV_Nese.pdf">Download CV</a>
+  </div>
+  <div>
+    <img src="/images/portfolioPicture.png" alt="portfolio picture">
+  </div>
 </div>
-<div>
-<img src="/images/portfolioPicture.png" alt="portfolio picture">
-</div>
+
 <div class="dark__background">
 <h1 id="skills">Skills</h1>
     {% include "../_includes/_skills.njk" %}
@@ -33,7 +36,7 @@ nav:
 <form
   action="https://formspree.io/f/myyqkzdz"
   method="POST"
->
+  >
   <label>
     E-posta adresiniz:
     <input type="email" name="email" required>
