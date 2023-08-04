@@ -62,7 +62,7 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    box-shadow: 3px 4px 17px 4px var(--light-head__color);
+    box-shadow: .1875rem .25rem 1.0625rem .25rem var(--light-head__color);
     .space__nav {
     align-items: center;
     display: flex;
@@ -269,11 +269,12 @@ label ul {
 .space__skills{
     max-width: 60rem;
     margin: 0 auto;
+    padding: 0 1rem;
     .skills__list{
         display: flex;
         flex-wrap: wrap;
-        gap: 3.5rem;
-        justify-content: space-between;
+        gap: 2.5rem;
+        justify-content: space-evenly;
         margin-top: 1rem;
     li{
     
@@ -286,13 +287,20 @@ label ul {
         }
         .skills__manage {
             background-color: var(--light-head__color);
-            
+            border-radius: 1rem;
             margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             span{
                 animation: skill 5s;
                 display: flex;
+                border-radius: 1rem;
                 position: relative;
-                border-bottom: .125rem solid var(--white__color);
+                border-bottom: .375rem solid var(--white__color);
+            }
+            p{
+                color: var(--white__color);
             }
         }
     }
@@ -317,8 +325,6 @@ label ul {
     }
 }
 
-
 .contact-mail input{
     display: block;
 }
-
