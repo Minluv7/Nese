@@ -1,9 +1,9 @@
-<ul>
+<ul  class="projects__list">
 
 {% for project in projects %}
     <li>
-        <p>{{project.name}}</p>
         <img src="{{project.img}}" alt="{{project.name}}">
+        <p>{{project.name}}</p>
         <a href="{{project.link}}"></a>
         <a href="{{project.githubRepo}}"></a>
     </li>

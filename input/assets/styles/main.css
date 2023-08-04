@@ -38,7 +38,7 @@ body {
 h1{
     font-family: 'MerriweatherSans-Regular';
 }
-p, label, button{
+p, label, button, a{
     font-family: 'WorkSans-Regular';
 }
 
@@ -49,14 +49,20 @@ ul{
 
 .dark__background{
     background-color: var(--head__color);
+    padding: 2rem 1rem;
+    h1{
+        color: var(--white__color);
+    }
 }
 
 nav {
     background-color: var(--head__color);
+    z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    box-shadow: 3px 4px 17px 4px var(--light-head__color);
     .space__nav {
     align-items: center;
     display: flex;
@@ -66,6 +72,7 @@ nav {
     padding: .625rem;
         label{
             margin: -8rem;
+            padding-top: 1rem;
         }
         ul{
             padding: 0;
@@ -94,14 +101,14 @@ nav {
 }
 
 .head-container{
-    margin: 8rem 0 8rem 0;
+    margin: 0 auto;
+    max-width: 60rem;
+    display: flex;
+    padding: 8rem 1rem 0;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
-@media (min-width: 31.25rem) {
-    .head-container{
-        display: flex;
-    }
-}
 
 @media (max-width: 31.25rem) {
     label .menu {
@@ -132,7 +139,6 @@ label .hamburger {
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     }
-
     nav .space__nav ul{
         height: 0%;
         display: flex;
@@ -213,21 +219,40 @@ label ul {
     transition: .25s 0s ease-in-out;
 }
 
+.head-text{
+    margin-right: -3rem;
+    flex: 1;
+    h1, p:nth-child(3){
+        padding-bottom: 1rem;
+        line-height: 2.875rem;
+    }
+    p {
+        line-height: 1.5rem;
+        text-wrap: balance;
+    }
+}
+.portfolio-picture{
+    margin-right: -3rem;
+    width: 35rem;
+}
 .solial-list{
     display: flex;
     padding-bottom: 2rem;
+    gap: 1rem;
 }
 
-.head-container {
-    position: relative;
+.download{
+    background-color: var(--head__color);
+    color: var(--white__color);
+    padding: 1rem;
+    text-decoration: none;
+    text-wrap: nowrap;
 }
 
-
-.portfolio-picture img {
+.portfolio-picture {
     animation: fly 5s infinite;
-    position: fixed;
-    right: 0;
-    margin-top: 3rem;
+    position: relative;
+    z-index: -1;
 }
 
 @keyframes fly {
@@ -241,3 +266,59 @@ label ul {
         top: 0;
     }
 }
+.space__skills{
+    max-width: 60rem;
+    margin: 0 auto;
+    .skills__list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3.5rem;
+        justify-content: space-between;
+        margin-top: 1rem;
+    li{
+    
+        display: flex;
+        flex-direction: column;
+        img{
+            height: 8.25rem;
+            object-fit: contain;
+            width: 8.25rem;
+        }
+        .skills__manage {
+            background-color: var(--light-head__color);
+            
+            margin-top: 1rem;
+            span{
+                animation: skill 5s;
+                display: flex;
+                position: relative;
+                border-bottom: .125rem solid var(--white__color);
+            }
+        }
+    }
+    }
+}
+
+@keyframes skill {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: "";
+    }
+}
+.projects{
+    margin: 5rem 0;
+    h1{
+        padding-bottom: 2rem;
+    }
+    .projects__list{
+        display: flex;
+    }
+}
+
+
+.contact-mail input{
+    display: block;
+}
+

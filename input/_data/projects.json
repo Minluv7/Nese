@@ -1,28 +1,28 @@
 [
     {   
-        "name": "pgm-platform",
+        "name": "Pgm-platform",
         "link": "https://pgm-platform-nese.onrender.com/",
         "img": "/images/pgm-platform.png",
         "githubRepo": "https://github.com/pgmgent-pgm-4/pgm-platform-Minluv7"
     },
 
     {   
-    "name": "Gentse feesten",
-    "link": "https://pgmgent-atwork-1.github.io/opdracht-2-gentse-feesten-2022-Minluv7/",
-    "img": "/images/gentsefeesten.jpeg",
-    "githubRepo": "https://github.com/pgmgent-atwork-1/opdracht-2-gentse-feesten-2022-Minluv7"
+        "name": "Gentse feesten",
+        "link": "https://pgmgent-atwork-1.github.io/opdracht-2-gentse-feesten-2022-Minluv7/",
+        "img": "/images/gentsefeesten.jpeg",
+        "githubRepo": "https://github.com/pgmgent-atwork-1/opdracht-2-gentse-feesten-2022-Minluv7"
     },
 
     {   
-    "name": "todo application",
-    "link": "",
-    "img": "/images/todo-app.jpeg",
-    "githubRepo": "https://github.com/pgmgent-pgm-3/opdracht-1---to-do-application-Minluv7"
+        "name": "Todo application",
+        "link": "",
+        "img": "/images/todo-app.jpeg",
+        "githubRepo": "https://github.com/pgmgent-pgm-3/opdracht-1---to-do-application-Minluv7"
     },
     {   
-    "name": "Schrauwen groen",
-    "link": "https://pgmgent-atwork-1.github.io/opdracht-1-schrauwen-groen-Minluv7/",
-    "img": "/images/schrauwen-groen.jpeg",
-    "githubRepo": "https://github.com/pgmgent-atwork-1/opdracht-1-schrauwen-groen-Minluv7"
+        "name": "Schrauwen groen",
+        "link": "https://pgmgent-atwork-1.github.io/opdracht-1-schrauwen-groen-Minluv7/",
+        "img": "/images/schrauwen-groen.jpeg",
+        "githubRepo": "https://github.com/pgmgent-atwork-1/opdracht-1-schrauwen-groen-Minluv7"
     }
 ]
