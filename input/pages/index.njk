@@ -2,6 +2,7 @@
 title: Hi, my name is Nese Yildirim
 head: Nese Yildirim
 tags: language
+home: /
 language: English
 nav: 
 -   home
@@ -23,10 +24,9 @@ nav:
     <img src="/images/portfolioPicture.png" alt="portfolio picture">
   </div>
 </div>
-
 <div class="dark__background">
   <div class="space__skills">
-  <h1 id="skills">Skills</h1>
+    <h1 id="skills">Skills</h1>
     {% include "../_includes/_skills.njk" %}
   </div>
 </div>
@@ -35,23 +35,23 @@ nav:
   {% include "../_includes/_projects.njk" %}
 </div>
 <div class="dark__background">
-<div class="space__contact">
-  <h1 id="contact" >Contact me</h1>
-  <form
-    action="https://formspree.io/f/myyqkzdz"
-    method="POST"
-    >
-    <label class="contact__mail">
-      Your email:
-      <input type="email" name="email" required>
-    </label>
-    <label class="contact__mail">
-      Your message:
-      <textarea name="message" required></textarea>
-    </label>
-    <!-- your other form fields go here -->
-    <button type="submit">Send</button>
-  </form>
-</div>
+  <div class="space__contact">
+    <h1 id="contact" >Contact me</h1>
+    <form
+      action="https://formspree.io/f/myyqkzdz"
+      method="POST"
+      >
+      <label class="contact__mail">
+        Your email:
+        <input type="email" name="email" required>
+      </label>
+      <label class="contact__mail">
+        Your message:
+        <textarea name="message" required></textarea>
+      </label>
+      <!-- your other form fields go here -->
+      <button type="submit">Send</button>
+    </form>
+  </div>
 </div>
 {% endblock main %}

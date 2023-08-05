@@ -1,7 +1,11 @@
 <ul class="solial-list">
     {% for social in socialMedia%}
         <li>
+        {% if social.url == "nese.yild@hotmail.com" %}
+            <a href="mailto:{{social.url}}" target="_blank" rel="nooperer noreferrer" > 
+        {% else %}
             <a href="{{social.url}}" target="_blank" rel="nooperer noreferrer" > 
+        {% endif %} 
             <img src="{{social.img}}" alt="{{social.name}}">
             </a>
         </li>

@@ -10,76 +10,86 @@
 <body>
 <nav>
     <div class="space__nav">
-        <div>
-            <img src="/images/logoNY.png" alt="logo">
+        <div class="nav__logo">
+            <a href="/Türkçe">
+                <img src="/images/logoNY.png" alt="logo">
+            </a>
         </div>
         <label>
-        <input type="checkbox">
-        <span class="menu"> <span class="hamburger"></span> </span>
-        <ul>
-        
-            <li  class="navigation">
-                <a  href="#ana-sayfa">ana-sayfa</a>
-            </li>
+            <input type="checkbox">
+            <span class="menu"> <span class="hamburger"></span> </span>
+            <ul>
             
-            <li  class="navigation">
-                <a  href="#skills">skills</a>
-            </li>
-            
-            <li  class="navigation">
-                <a  href="#projeler">projeler</a>
-            </li>
-            
-            <li  class="navigation">
-                <a  href="#iletişim">iletişim</a>
-            </li>
-            
-        </ul>
+                <li  class="navigation">
+                    <a  href="#ana-sayfa">ana-sayfa</a>
+                </li>
+                
+                <li  class="navigation">
+                    <a  href="#skills">skills</a>
+                </li>
+                
+                <li  class="navigation">
+                    <a  href="#projeler">projeler</a>
+                </li>
+                
+                <li  class="navigation">
+                    <a  href="#iletişim">iletişim</a>
+                </li>
+                
+            </ul>
         </label>
     </div>
 </nav>
     <main>
     
 <div class="head-container">
-  <div>
+  <div class="head-text">
     <h1 id="na-sayfa">Merhaba, ben Nese Yildirim</h1>
     <p>Artevelde yüksek okulu'nda full stack developer öğrencisiyim. HTML, CSS ve JavaScript konularında uzmanlaşıyorum.</p>
     <ul class="solial-list">
     
         <li>
-            <a href="www.linkedin.com/in/nese-yildirim-3016b51b7" target="_blank" rel="nooperer noreferrer" > 
+        
+            <a href="https://www.linkedin.com/in/nese-yildirim-3016b51b7" target="_blank" rel="nooperer noreferrer" > 
+         
             <img src="/images/linkedin.png" alt="LinkedIn">
             </a>
         </li>
     
         <li>
+        
             <a href="https://github.com/Minluv7" target="_blank" rel="nooperer noreferrer" > 
+         
             <img src="/images/Github.png" alt="GitHub">
             </a>
         </li>
     
         <li>
-            <a href="nese.yild@hotmail.com" target="_blank" rel="nooperer noreferrer" > 
+        
+            <a href="mailto:nese.yild@hotmail.com" target="_blank" rel="nooperer noreferrer" > 
+         
             <img src="/images/mail.png" alt="E-mail">
             </a>
         </li>
     
         <li>
+        
             <a href="https://wa.me/0486725919" target="_blank" rel="nooperer noreferrer" > 
+         
             <img src="/images/WhatsApp.png" alt="WhatApp">
             </a>
         </li>
     
 </ul>
-    <a href="/downloads/cvENG.pdf" download="CV_Nese.pdf">Download CV</a>
+    <a class="download" href="/downloads/cvENG.pdf" download="CV_Nese.pdf">Download CV</a>
   </div>
   <div class="portfolio-picture">
     <img src="/images/portfolioPicture.png" alt="portfolio picture">
   </div>
 </div>
-
 <div class="dark__background">
-<h1 id="skills">Skills</h1>
+  <div class="space__skills">
+    <h1 id="skills">Skills</h1>
     <ul class="skills__list">
     
     <li>
@@ -171,10 +181,11 @@
     </li>
     
 </ul>
+  </div>
 </div>
-<div class="projects">
-<h1 id="projeler">Projeler</h1>
- <div class="arrow-btn">
+<div class="slider-container">
+  <h1 id="projeler">Projeler</h1>
+  <div class="arrow-btn">
     <button class="previous-btn"> &larr; </button>
     <button class="next-btn"> &rarr;</button>
 </div>
