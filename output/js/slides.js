@@ -9,6 +9,7 @@ const slider = document.querySelector('.slider');
       this.cacheElements();
       this.buttonListeners();
       this.updateVisibleSlides(); // Pas de zichtbare slides aan bij het initialiseren
+      window.addEventListener('resize', this.updateVisibleSlides.bind(this)); // Voeg een event listener toe om het aantal zichtbare slides bij te werken bij het wijzigen van het schermformaat
     },
 
     cacheElements() {
@@ -33,6 +34,13 @@ const slider = document.querySelector('.slider');
     },
 
     updateVisibleSlides() {
+      // Bepaal het aantal zichtbare slides op basis van het schermformaat
+      if (window.innerWidth < 500) {
+        this.visibleSlides = 1;
+      } else {
+        this.visibleSlides = 2;
+      }
+
       this.slides.forEach((slide, index) => {
         if (index >= this.currentIndex && index < this.currentIndex + this.visibleSlides) {
           slide.style.display = 'block'; // Toon de slide binnen het zichtbare gedeelte

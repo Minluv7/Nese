@@ -1,45 +1,24 @@
-{# <ul  class="projects__list">
-
-{% for project in projects %}
-    <li>
-        <img src="{{project.img}}" alt="{{project.name}}">
-        <div class="project__link-name">
-            <p>{{project.name}}</p>
-            <div class="project__links">
-                <a href="{{project.link}}" target="_blank">
-                    <img src="/images/Link.png" alt="link"></a>
-                <a href="{{project.githubRepo}}" target="_blank">
-                    <img src="/images/Github.png" alt="github">
-                </a>
-            </div>
-        </div>
-    </li>
-{% endfor %}
-</ul>
-
-#}
-
-<button class="previous-btn"> &larr; Vorige</button>
-<button class="next-btn"> &rarr; Volgende</button>
-
+<div class="arrow-btn">
+    <button class="previous-btn"> &larr; </button>
+    <button class="next-btn"> &rarr;</button>
+</div>
 
 <div class="slider">
-  <ul  class="slide-group"> 
-  {% for project in projects %}
-      <li class="slide">
-          <img src="{{project.img}}" alt="{{project.name}}">
-          <div >
-              <p>{{project.name}}</p>
-              <div >
-                  <a href="{{project.link}}" target="_blank">
-                      <img src="/images/Link.png" alt="link"></a>
-                  <a href="{{project.githubRepo}}" target="_blank">
-                      <img src="/images/Github.png" alt="github">
-                  </a>
-              </div>
-          </div>
-      </li>
-  {% endfor %}
-  </ul>
-
+    <ul  class="slide-group"> 
+    {% for project in projects %}
+        <li class="slide">
+            <img src="{{project.img}}" alt="{{project.name}}">
+            <div class="project__link-name" >
+                <p>{{project.name}}</p>
+                <div class="project__links">
+                    <a href="{{project.link}}" target="_blank">
+                        <img src="/images/Link.png" alt="link"></a>
+                    <a href="{{project.githubRepo}}" target="_blank">
+                        <img src="/images/Github.png" alt="github">
+                    </a>
+                </div>
+            </div>
+        </li>
+    {% endfor %}
+    </ul>
 </div>

@@ -162,7 +162,6 @@ label .hamburger {
     label .menu, label .hamburger:after, label input, label .hamburger:before, label ul{
         display: none;
     }
-
     nav .space__nav ul{
         opacity: 1;
         position: static;
@@ -232,11 +231,12 @@ label ul {
     padding: 1rem;
     h1, p:nth-child(3){
         padding-bottom: 1rem;
+        text-wrap: balance;
         line-height: 2.875rem;
     }
     p {
         line-height: 1.5rem;
-        text-wrap: balance;
+        font-size: medium;
     }
 }
 
@@ -313,7 +313,6 @@ label ul {
     }
     }
 }
-
 @keyframes skill {
     0% {
         width: 0;
@@ -322,60 +321,46 @@ label ul {
         width: "";
     }
 }
-.projects, .slider-container{
+.slider-container{
     height: 100vh;
     padding: 0 1rem;
-    /* display: flex;
-    // max-width: 60rem;
-    // flex-direction: column;
-    // margin: 0 auto;
-    // justify-content: center;
-    // width: 640px;
-    // overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     h1{
-        padding-bottom: 5rem;
+        padding-left: 1rem;
     }
-    .projects__list, .slide-group{
+    .arrow-btn{
+        gap: 3rem;
+        padding: 0 1rem 1rem 0;
+    display: flex;
+    justify-content: flex-end;
+    button{
+        padding: 0 1rem;
+    }
+    }
+    .slide-group{
         display: flex;
-       
-        li, .slide {
-            /* width: 300px;
-            // height: 150px;
-            // background-color: #f0f0f0;
-            // display: flex;
-            // font-size: 24px;*/
+        .slide {
             margin: 10px;
-            justify-content: center;
-            align-items: center;
+            
             width: 25rem;
             padding-bottom: 2rem;
             img{
-                width: 20rem;
+                width: 100%;
                 height: 20rem;
                 object-fit: cover;
                 border-radius: 2rem;
-            }
-            p, a{
-                display: none;
             }
             a img{
                 width: 2rem;
                 height: 2rem;
             }
-        }
-        li:hover, .slide:hover{
-            mix-blend-mode: luminosity;
-            p, a {
-                display: block;
-            }
-            a img:hover{
-                width: 2.5rem;
-                height: 2.5rem;
-            }
             .project__link-name{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                padding: 1rem 0 0 0;
             }
             .project__links{
                 display: flex;
@@ -384,14 +369,17 @@ label ul {
                 padding-top: 1rem;
             }
         }
+        .slide:hover{
+            mix-blend-mode: luminosity;
+            
+            a img:hover{
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+            
+        }
     }
 }
-
-/* .slider {
-//     display: flex;  Maakt de slidegroepen horizontaal geplaatst 
-     transition: transform 0.3s ease;  Zorgt voor een vloeiende overgang 
-// } */
-
 
 .space__contact{
     margin: 0 auto;
@@ -433,9 +421,9 @@ footer{
 .language{
     display: flex;
     padding-bottom: .625rem;
- a{
-    color: black;
-    text-decoration: none;
- }
+    a{
+        color: black;
+        text-decoration: none;
+    }
 }
 
