@@ -29,28 +29,29 @@ nav:
   <h1 id="skills">Skills</h1>
     {% include "../_includes/_skills.njk" %}
   </div>
-  
 </div>
-<div class="projects">
+<div class="slider-container">
   <h1 id="projects">Projects</h1>
   {% include "../_includes/_projects.njk" %}
 </div>
 <div class="dark__background">
+<div class="space__contact">
   <h1 id="contact" >Contact me</h1>
-<form
-  action="https://formspree.io/f/myyqkzdz"
-  method="POST"
-  >
-  <label class="contact-mail">
-    Your email:
-    <input type="email" name="email" required>
-  </label>
-  <label>
-    Your message:
-    <textarea name="message" required></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+  <form
+    action="https://formspree.io/f/myyqkzdz"
+    method="POST"
+    >
+    <label class="contact__mail">
+      Your email:
+      <input type="email" name="email" required>
+    </label>
+    <label class="contact__mail">
+      Your message:
+      <textarea name="message" required></textarea>
+    </label>
+    <!-- your other form fields go here -->
+    <button type="submit">Send</button>
+  </form>
+</div>
 </div>
 {% endblock main %}

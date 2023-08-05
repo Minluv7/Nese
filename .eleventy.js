@@ -4,6 +4,7 @@ module.exports = (eleventyConfig) =>{
         "./input/assets/images": "images/",
         "./input/assets/downloads": "downloads/",
         "./input/assets/fonts": "fonts/",
+        "./input/js": "js/"
     });
 
       return{
@@ -12,7 +13,8 @@ module.exports = (eleventyConfig) =>{
             output: "output",
             includes: "../_partials",
             layouts: "../_layouts",
-            data: "../_data"
+            data: "../_data",
+            js: "../js"
         }
     }
 }

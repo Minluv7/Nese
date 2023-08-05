@@ -6,7 +6,6 @@
     <title>Nese Yildirim</title>
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/fonts/stylesheet.css">
 </head>
 <body>
 <nav>
@@ -176,88 +175,127 @@
 </div>
 <div class=projects>
     <h1 id="projecten">Projecten</h1>
-    <ul  class="projects__list">
+    
+
+    <button class="previous-btn"> &larr; Vorige</button>
+    <button class="next-btn"> &rarr; Volgende</button>
 
 
-    <li>
-        <img src="/images/pgm-platform.png" alt="Pgm-platform">
-        <p>Pgm-platform</p>
-        <a href="https://pgm-platform-nese.onrender.com/"></a>
-        <a href="https://github.com/pgmgent-pgm-4/pgm-platform-Minluv7"></a>
-    </li>
+<div class="slider">
+  <ul  class="slide-group"> 
+  
+      <li class="slide">
+          <img src="/images/pgm-platform.png" alt="Pgm-platform">
+          <div >
+              <p>Pgm-platform</p>
+              <div >
+                  <a href="https://pgm-platform-nese.onrender.com/" target="_blank">
+                      <img src="/images/Link.png" alt="link"></a>
+                  <a href="https://github.com/pgmgent-pgm-4/pgm-platform-Minluv7" target="_blank">
+                      <img src="/images/Github.png" alt="github">
+                  </a>
+              </div>
+          </div>
+      </li>
+  
+      <li class="slide">
+          <img src="/images/gentsefeesten.jpeg" alt="Gentse feesten">
+          <div >
+              <p>Gentse feesten</p>
+              <div >
+                  <a href="https://pgmgent-atwork-1.github.io/opdracht-2-gentse-feesten-2022-Minluv7/" target="_blank">
+                      <img src="/images/Link.png" alt="link"></a>
+                  <a href="https://github.com/pgmgent-atwork-1/opdracht-2-gentse-feesten-2022-Minluv7" target="_blank">
+                      <img src="/images/Github.png" alt="github">
+                  </a>
+              </div>
+          </div>
+      </li>
+  
+      <li class="slide">
+          <img src="/images/todo-app.jpeg" alt="Todo application">
+          <div >
+              <p>Todo application</p>
+              <div >
+                  <a href="" target="_blank">
+                      <img src="/images/Link.png" alt="link"></a>
+                  <a href="https://github.com/pgmgent-pgm-3/opdracht-1---to-do-application-Minluv7" target="_blank">
+                      <img src="/images/Github.png" alt="github">
+                  </a>
+              </div>
+          </div>
+      </li>
+  
+      <li class="slide">
+          <img src="/images/schrauwen-groen.jpeg" alt="Schrauwen groen">
+          <div >
+              <p>Schrauwen groen</p>
+              <div >
+                  <a href="https://pgmgent-atwork-1.github.io/opdracht-1-schrauwen-groen-Minluv7/" target="_blank">
+                      <img src="/images/Link.png" alt="link"></a>
+                  <a href="https://github.com/pgmgent-atwork-1/opdracht-1-schrauwen-groen-Minluv7" target="_blank">
+                      <img src="/images/Github.png" alt="github">
+                  </a>
+              </div>
+          </div>
+      </li>
+  
+  </ul>
 
-    <li>
-        <img src="/images/gentsefeesten.jpeg" alt="Gentse feesten">
-        <p>Gentse feesten</p>
-        <a href="https://pgmgent-atwork-1.github.io/opdracht-2-gentse-feesten-2022-Minluv7/"></a>
-        <a href="https://github.com/pgmgent-atwork-1/opdracht-2-gentse-feesten-2022-Minluv7"></a>
-    </li>
-
-    <li>
-        <img src="/images/todo-app.jpeg" alt="Todo application">
-        <p>Todo application</p>
-        <a href=""></a>
-        <a href="https://github.com/pgmgent-pgm-3/opdracht-1---to-do-application-Minluv7"></a>
-    </li>
-
-    <li>
-        <img src="/images/schrauwen-groen.jpeg" alt="Schrauwen groen">
-        <p>Schrauwen groen</p>
-        <a href="https://pgmgent-atwork-1.github.io/opdracht-1-schrauwen-groen-Minluv7/"></a>
-        <a href="https://github.com/pgmgent-atwork-1/opdracht-1-schrauwen-groen-Minluv7"></a>
-    </li>
-
-</ul>
+</div>
 
 </div>
 <div class="dark__background">
-  <h1 id="contact">Contacteer mij</h1>
-<form
-  action="https://formspree.io/f/myyqkzdz"
-  method="POST"
-  >
-  <label>
-    Jouw email:
-    <input type="email" name="email" required>
-  </label>
-  <label>
-    Jouw bericht:
-    <textarea name="message" required></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Verstuur</button>
-</form>
+  <div class="space__contact">
+    <h1 id="contact">Contacteer mij</h1>
+    <form
+      action="https://formspree.io/f/myyqkzdz"
+      method="POST"
+      >
+      <label class="contact__mail">
+        Jouw email:
+        <input type="email" name="email" required>
+      </label>
+      <label class="contact__mail">
+        Jouw bericht:
+        <textarea name="message" required></textarea>
+      </label>
+      <!-- your other form fields go here -->
+      <button type="submit">Verstuur</button>
+    </form>
+</div>
 </div>
 
     </main>
     <footer>
-       <ul>
-   
-            <li class="menu__item">
-                <a class="menu__link menu__border" href="/Nederlands/">
-                    
-                        Nederlands
-                    
-                </a>
-            </li>
-        
-            <li class="menu__item">
-                <a class="menu__link menu__border" href="/Türkçe/">
-                    
-                        Türkçe
-                    
-                </a>
-            </li>
-        
-            <li class="menu__item">
-                <a class="menu__link menu__border" href="/">
-                    
-                        English
-                    
-                </a>
-            </li>
-        
-        </ul>
+    <ul class="languages__list">
+    
+        <li class="language">
+            <a href="/Nederlands/">
+                
+                    Nederlands
+                
+            </a>
+        </li>
+    
+        <li class="language">
+            <a href="/Türkçe/">
+                
+                    Türkçe
+                
+            </a>
+        </li>
+    
+        <li class="language">
+            <a href="/">
+                
+                    English
+                
+            </a>
+        </li>
+    
+</ul>
     </footer>
 </body>
+<script src="/js/slides.js"></script>
 </html>

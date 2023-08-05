@@ -34,6 +34,9 @@ body {
     line-height: 1;
     background-color: var(--background__color);
 }
+main{
+    margin-top: 117px;
+}
 
 h1{
     font-family: 'MerriweatherSans-Regular';
@@ -48,9 +51,10 @@ ul{
 }
 
 .dark__background{
-    height: 100vh;
-    background-color: var(--head__color);
     align-items: center;
+    background-color: var(--head__color);
+    display: flex;
+    justify-content: center;
     display: flex;
     h1{
         color: var(--white__color);
@@ -225,6 +229,7 @@ label ul {
 .head-text{
     margin-right: -3rem;
     flex: 1;
+    padding: 1rem;
     h1, p:nth-child(3){
         padding-bottom: 1rem;
         line-height: 2.875rem;
@@ -234,10 +239,7 @@ label ul {
         text-wrap: balance;
     }
 }
-.portfolio-picture{
-    margin-right: -3rem;
-    width: 35rem;
-}
+
 .solial-list{
     display: flex;
     padding-bottom: 2rem;
@@ -256,6 +258,7 @@ label ul {
     animation: fly 5s infinite;
     position: relative;
     z-index: -1;
+    width: 35rem;
 }
 
 @keyframes fly {
@@ -269,10 +272,11 @@ label ul {
         top: 0;
     }
 }
+
 .space__skills{
     max-width: 60rem;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 3rem 1rem;
     .skills__list{
         display: flex;
         flex-wrap: wrap;
@@ -318,46 +322,120 @@ label ul {
         width: "";
     }
 }
-.projects{
+.projects, .slider-container{
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 0 1rem;
+    /* display: flex;
+    // max-width: 60rem;
+    // flex-direction: column;
+    // margin: 0 auto;
+    // justify-content: center;
+    // width: 640px;
+    // overflow: hidden; */
     h1{
-        padding-bottom: 2rem;
+        padding-bottom: 5rem;
     }
-    .projects__list{
+    .projects__list, .slide-group{
         display: flex;
-        width: 100%;
-        overflow: scroll;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        li{
-            flex-shrink: 0;
+       
+        li, .slide {
+            /* width: 300px;
+            // height: 150px;
+            // background-color: #f0f0f0;
+            // display: flex;
+            // font-size: 24px;*/
+            margin: 10px;
+            justify-content: center;
+            align-items: center;
             width: 25rem;
-            margin-right: 2rem;
             padding-bottom: 2rem;
             img{
-                width: 25rem;
-                height: 25rem;
+                width: 20rem;
+                height: 20rem;
                 object-fit: cover;
+                border-radius: 2rem;
+            }
+            p, a{
+                display: none;
+            }
+            a img{
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+        li:hover, .slide:hover{
+            mix-blend-mode: luminosity;
+            p, a {
+                display: block;
+            }
+            a img:hover{
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+            .project__link-name{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .project__links{
+                display: flex;
+                flex-direction: row;
+                gap: 2.875rem;
+                padding-top: 1rem;
             }
         }
     }
 }
 
-.contact-mail input{
-    display: block;
+/* .slider {
+//     display: flex;  Maakt de slidegroepen horizontaal geplaatst 
+     transition: transform 0.3s ease;  Zorgt voor een vloeiende overgang 
+// } */
+
+
+.space__contact{
+    margin: 0 auto;
+    max-width: 60rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 6rem 0;
+    h1{
+        text-align: center;
+    }
+    .contact__mail {
+        display: flex;
+        flex-direction: column;
+        color: var(--white__color);
+        line-height: 2rem;
+            input{
+                display: block;
+            }
+        }
+    form{
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        textarea{
+            height: 8rem;
+        }
+        button{
+            width: 100%;
+        }
+    }
 }
 
+footer{
+    padding: 1rem 0 0 1rem;
+}
 
-
-
-
-
-
-
-
-
-
+.language{
+    display: flex;
+    padding-bottom: .625rem;
+ a{
+    color: black;
+    text-decoration: none;
+ }
+}
 
