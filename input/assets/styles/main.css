@@ -336,6 +336,7 @@ label ul {
     }
     .slide-group{
         display: flex;
+        justify-content: space-around;
         .slide {
             margin: .625rem;
             width: 25rem;
